@@ -4,7 +4,7 @@ const navLinks = document.querySelectorAll('header nav a');
 
 // Organizacion, scrolling para una navegacion correcta hacia los links del nav
 
-window.addEventListener('scroll', () => {
+/* window.addEventListener('scroll', () => {
     let current = '';
 
     sections.forEach(section => {
@@ -22,7 +22,7 @@ window.addEventListener('scroll', () => {
         }
     });
 
-});
+}); */
 
 
 
@@ -66,11 +66,51 @@ const track = document.querySelector('.carousel-track');
 const clone = track.innerHTML;
 track.innerHTML += clone;
 
+
+
 // Script para el menu hamburguesa
 
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  const mobileNavLinks = document.querySelectorAll('#nav-menu a');
+  const MOBILE_Q = '(max-width: 768px)';
 
-hamburger.addEventListener('click', () => {
+  navMenu.classList.remove('show');
+
+  hamburger.addEventListener('click', (e) => {
+    if (!window.matchMedia(MOBILE_Q).matches) return;
     navMenu.classList.toggle('show');
+  });
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('show');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navMenu.classList.contains('show')) return;
+    const path = e.composedPath ? e.composedPath() : (e.path || []);
+    if (!path.includes(navMenu) && !path.includes(hamburger)) {
+      navMenu.classList.remove('show');
+    }
+  });
+
+  // Cerrar con Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') navMenu.classList.remove('show');
+  });
+
+  window.addEventListener('resize', () => {
+    if (!window.matchMedia(MOBILE_Q).matches) {
+      navMenu.classList.remove('show');
+    }
+  });
 });
+
+
+
+
+
+
