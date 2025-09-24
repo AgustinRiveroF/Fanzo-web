@@ -2321,7 +2321,7 @@
      }
 
      .container {
-         width: 72rem;
+         width: 60rem;
          max-width: 100%;
          font-size: 0.9rem;
      }
@@ -2329,6 +2329,14 @@
      .form-contacto input,
      .form-contacto textarea {
          font-size: 0.7vw;
+     }
+
+     .image-section img {
+         max-width: 100%;
+         width: 25rem;
+         border-left: 1px solid rgba(138, 122, 122, 0.226);
+         padding-left: 3rem;
+         padding-right: 3rem;
      }
 
  }
