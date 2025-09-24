@@ -2278,7 +2278,7 @@
 
      .cursos-text-2 {
          font-family: 'Montserrat', 'Syncopate', sans-serif;
-         font-size: 10rem;
+         font-size: 7vw;
          font-weight: 900;
          text-transform: uppercase;
          color: #fff;
@@ -2289,7 +2289,7 @@
          padding: 20px 0;
          top: -10rem;
          margin-top: 0;
-         margin-left: 3%;
+         margin-left: 5%;
          display: block;
      }
 
@@ -2323,12 +2323,12 @@
      .container {
          width: 72rem;
          max-width: 100%;
-         font-size: 1.5rem;
+         font-size: 0.9rem;
      }
 
      .form-contacto input,
      .form-contacto textarea {
-         font-size: 1rem;
+         font-size: 0.7vw;
      }
 
  }
