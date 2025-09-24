@@ -644,6 +644,88 @@
      display: block;
  }
 
+ /* ---------------------------------------------------------------------------------- SECTION PROJECTS ----------------------------------------------------------------- */
+
+ .proyecto-text {
+     font-family: 'Montserrat', 'Syncopate', sans-serif;
+     font-size: 6vw;
+     font-weight: 900;
+     text-transform: uppercase;
+     color: #fff;
+     text-align: center;
+     position: relative;
+     text-shadow: 8px 7px 0px rgb(0 0 0 / 6%), -1px -1px 5px rgb(195 195 195);
+     background-color: white;
+ }
+
+ #proyectos {
+     padding: 4rem 2rem;
+     background: #ffffff;
+     text-align: center;
+     margin-top: 20rem;
+     margin-bottom: 10rem;
+ }
+
+ .proyectos-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+     gap: 2rem;
+     padding: 0vw 8vw;
+ }
+
+ .proyecto-card {
+     background: #fff;
+     padding: 1.5rem;
+     border-radius: 12px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     text-align: left;
+     transition: transform 0.3s ease;
+ }
+
+ .proyecto-card:hover {
+     transform: translateY(-5px);
+ }
+
+ .logo {
+     width: 40px;
+     height: 40px;
+     object-fit: contain;
+     margin-bottom: 1rem;
+ }
+
+ .proyecto-card h3 {
+     margin-bottom: 0.5rem;
+     color: #333;
+ }
+
+ .proyecto-card p {
+     margin-bottom: 1rem;
+     font-size: 0.95rem;
+     color: #555;
+ }
+
+ .proyecto-card .tecnologias {
+     font-style: italic;
+     font-size: 0.85rem;
+     color: #777;
+ }
+
+ .proyecto-card a {
+     display: inline-block;
+     padding: 0.5rem 1rem;
+     background: #4f17a3;
+     color: #fff;
+     border-radius: 8px;
+     text-decoration: none;
+     font-size: 0.9rem;
+     transition: background 0.3s ease;
+ }
+
+ .proyecto-card a:hover {
+     background: #2b0b66;
+ }
+
+
  /* ---------------------------------------------------------------------------------- SECTION CONTACTO ----------------------------------------------------------------- */
 
  section#contacto {
@@ -1055,7 +1137,7 @@
      /* ------------------------------------------------------------------------------ SECTION SOBRE MI ----------------------------------------------------------------- */
      .sobre-mi-section {
          flex-direction: column-reverse;
-         padding: 62px 10vw;
+         padding: 80px 10vw;
          margin-top: 0rem;
          text-align: center;
      }
@@ -1323,6 +1405,56 @@
          opacity: 1;
          transform: none;
          transition: none;
+     }
+
+     /* ------------------------------------------------------------------------------ SECTION PROJECTS ------------------------------------------------------------- */
+     #proyectos {
+         padding: 2rem 0.5rem;
+         background: #fff;
+         text-align: center;
+         margin-top: 6rem;
+         margin-bottom: 4rem;
+     }
+
+     #proyectos h2 {
+         font-size: 2.5rem;
+         margin-bottom: 1.5rem;
+     }
+
+     .proyectos-container {
+         display: flex;
+         flex-direction: column;
+         gap: 1.5rem;
+     }
+
+     .proyecto-card {
+         padding: 1rem;
+         border-radius: 10px;
+         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+         font-size: 1rem;
+     }
+
+     .logo {
+         width: 32px;
+         height: 32px;
+         margin-bottom: 0.5rem;
+     }
+
+     .proyecto-card h3 {
+         font-size: 1.2rem;
+     }
+
+     .proyecto-card p {
+         font-size: 0.95rem;
+     }
+
+     .proyecto-card .tecnologias {
+         font-size: 0.85rem;
+     }
+
+     .proyecto-card a {
+         font-size: 0.9rem;
+         padding: 0.4rem 0.8rem;
      }
 
      /* ------------------------------------------------------------------------------ MEDIA QUERIES RESPONSIVE CONTACT ------------------------------------------------- */
@@ -1692,6 +1824,53 @@
          overflow: overlay;
      }
 
+     /*--------------------------------------------------------------------------------- SECTION PROJECTS --------------------------------------------------------------- */
+     #proyectos {
+         padding: 3rem 2vw;
+         margin-top: 10rem;
+         margin-bottom: 6rem;
+     }
+
+     #proyectos h2 {
+         font-size: 4rem;
+         margin-bottom: 1.5rem;
+     }
+
+     .proyectos-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+         gap: 1.5rem;
+     }
+
+     .proyecto-card {
+         padding: 1.2rem;
+         border-radius: 12px;
+         box-shadow: 0 3px 8px rgba(0, 0, 0, 0.09);
+         font-size: 1.05rem;
+     }
+
+     .logo {
+         width: 36px;
+         height: 36px;
+         margin-bottom: 0.7rem;
+     }
+
+     .proyecto-card h3 {
+         font-size: 1.3rem;
+     }
+
+     .proyecto-card p {
+         font-size: 1rem;
+     }
+
+     .proyecto-card .tecnologias {
+         font-size: 0.9rem;
+     }
+
+     .proyecto-card a {
+         font-size: 1rem;
+         padding: 0.5rem 1rem;
+     }
  }
 
  /* ---------------------------------------------------------------------------------- DESKTOP LARGE & XL --------------------------------------------------------------- */
@@ -2015,6 +2194,55 @@
      .front,
      .back {
          padding: 5px;
+     }
+
+     /*--------------------------------------------------------------------------------- SECTION PROJECTS --------------------------------------------------------------- */
+
+     #proyectos {
+         padding: 4rem 2rem;
+         margin-top: 20rem;
+         margin-bottom: 10rem;
+     }
+
+     #proyectos h2 {
+         font-size: 6rem;
+         margin-bottom: 0;
+     }
+
+     .proyectos-container {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+         gap: 2rem;
+     }
+
+     .proyecto-card {
+         padding: 1.5rem;
+         border-radius: 12px;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+         font-size: 1.1rem;
+     }
+
+     .logo {
+         width: 40px;
+         height: 40px;
+         margin-bottom: 1rem;
+     }
+
+     .proyecto-card h3 {
+         font-size: 1.5rem;
+     }
+
+     .proyecto-card p {
+         font-size: 1.05rem;
+     }
+
+     .proyecto-card .tecnologias {
+         font-size: 1rem;
+     }
+
+     .proyecto-card a {
+         font-size: 1rem;
+         padding: 0.5rem 1rem;
      }
  }
 
