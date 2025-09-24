@@ -953,6 +953,7 @@
          pointer-events: none;
          transition: opacity .22s ease, transform .22s ease;
          z-index: 1000;
+         width: 130vw;
      }
 
      #nav-menu.show {
